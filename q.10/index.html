@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 10</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let numero = parseInt(prompt("Digite um número:"));
+        let éPrimo = numero > 1;
+        for (let i = 2; i <= Math.sqrt(numero); i++) {
+            if (numero % i === 0) {
+                éPrimo = false;
+                break;
+            }
+        }
+        alert("O número " + numero + " é primo? " + éPrimo);
+    </script>
+</body>
+</html>
